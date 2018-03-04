@@ -1,0 +1,223 @@
+/*中间分类模块 begin*/
+.grid{
+	height: 480px;
+}
+.grid-clo1{
+	width: 190px;
+	height: 100%;
+	position: relative;
+}
+.ad{
+	width: 250px;
+	height: 480px;
+	position: absolute;
+	top: 0;
+	left:-250px;
+}
+/*在这里可以使用两种方式来实现图片的动画效果：1 直接使用img来存放图片，通过改变图片的宽度来实现动画，
+2 将图片作为一个div的背景图，通过控制盒子来实现图片的动画展示*/
+.ad-r{
+	position: absolute;
+	top: 0;
+	left: 250px;
+	z-index: 999;
+	background: url("../images/ad-r.jpg");
+	height: 480px;
+	width: 0px;/*设置大图的初始宽度为0  即隐藏*/
+	/*当图片显示时，添加动画效果*/
+	transition: all 0.8s;
+}
+.ad:hover .ad-r{/*当鼠标经过时，回复大图的宽度，使其显示出来*/
+	width: 990px;
+}
+.grid-clo1 ul{
+	padding: 15px 0;
+	height: 450px;
+    background-color: #fefefe;
+    color: #636363;
+
+}
+.grid-clo1 ul li{
+	padding-left: 18px;
+}
+.grid-clo1 li:hover{
+	background-color: #d9d9d9;
+}
+.grid-clo1 li a{
+	font-size: 14px;
+    color: #626262;
+    line-height: 28px;
+}
+.grid-clo1 li a:hover{
+	color: #c81623;
+}
+.grid-clo2{
+	width: 590px;
+	height: 100%;;
+	margin-left: 10px;
+	position: relative;
+}
+.grid-clo2 div{
+	height: 470px;
+	margin-top: 10px;
+}
+img{
+	display: block;
+	border: 0;
+ 	vertical-align: middle;/*解决图片顶部空白缝隙问题*/
+
+}
+.arrow-l ,.arrow-r{
+	position: absolute;
+	top: 50%;
+	width: 24px;
+    height: 40px;
+	background-color: pink;
+	transform: translateY(-50%);
+	text-align: center;
+	line-height: 40px;
+    background-color: rgba(0,0,0,.2);
+    color: hsla(0,0%,100%,.4);
+}
+.arrow-l:hover ,.arrow-r:hover{
+	    background-color: rgba(0,0,0,.5);
+	    color: #fff;
+}
+.arrow-l i,.arrow-r i{
+	font-family: "icomoon";
+	font-style: normal;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+.arrow-r{
+	right: 0;
+}
+.circle{
+	width: 152px;
+	height: 18px;
+	margin-left: 0!important;
+    left: 46px;
+    bottom: 20px;
+    position: absolute;
+   
+}
+.circle li{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin-left: 4px;
+	float: left;
+	cursor: pointer;
+}
+.circle li:hover{
+	background-color: #c81623;
+}
+.circle .current{
+ 	background-color: #c81623;
+}
+.grid-clo3{
+	width: 190px;
+	height: 100%;
+	margin-left: 10px;
+}
+.grid-clo3 div{
+	padding: 0;
+	display: block;
+    width: 190px;
+    height: 150px;
+    margin-top: 10px;
+}
+.grid-clo4{
+	width: 190px;
+	height: 100%;
+	margin-left: 10px;
+	position: relative;
+}
+.login{
+	height: 160px;
+	background-color: #fff;
+	margin-top: 10px;
+	text-align: center;
+	position: relative;
+    padding-top: 70px;
+    height: 75px;
+}
+.login-t{
+  position: absolute;
+    left: 50%;
+    top: -10px;
+    margin-left: -34px;
+    width: 65px;
+    height: 65px;
+}
+.login-t img {
+    display: block;
+    width: 65px;
+    height: 65px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.user_avatar_lk{
+	position: absolute;
+    left: -17px;
+    top: -16px;
+    width: 106px;
+    height: 108px;
+    background-image: url(../images/sprite.user.png);
+    background-position: 0 0;
+    color: #666;
+    text-decoration: none;
+
+}
+.login-m{
+	width: 170px;
+	height: 40px;
+	padding:0 10px;
+}
+.login-m p{
+	overflow: hidden;
+    line-height: 20px;
+    width: 100%;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    color: #888;
+}
+.login-b{
+	height: 25px;
+	margin-top: 10px;
+
+}
+.login-b a:hover {
+    background-color: #e01222;
+    color: #fff;
+}
+.user_profit_lk{
+	display: inline-block;
+    margin: 0 5px;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    color: #e43f3b;
+    border-radius: 13px;
+    box-shadow: 4px 6px 12px 2px rgba(45,45,45,.15)
+}
+.user_profit_lk_plus{
+    background: #363634;
+    color: #e5d790;
+}
+.news{
+	height: 150px;
+	background-color: #fff;
+}
+.expand{
+	height: 160px;
+	background-color: #fff;
+}
+
+
+/*中间分类模块end*/
